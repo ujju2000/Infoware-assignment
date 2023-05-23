@@ -1,0 +1,20 @@
+<%- include('header'); -%>
+<h1>Employee List</h1>
+  <table>
+ 
+    <% employees.forEach(employee => { %>
+    <form action="/employees/ <%= employee.id %>" method="POST">
+      <tr>
+        <td><input type="text" name="fname" value="<%= employee.fname %>"></td>
+        <td><input type="text" name="lname" value="<%= employee.lname %>"></td>
+        <td><input type="text" name="email" value="<%= employee.email %>"></td>
+        <td><input type="text" name="age" value="<%= employee.age %>"></td>
+        <td><input type="text" name="department" value="<%= employee.department%>"></td>
+        <td><input type="text" name="salary" value="<%= employee.salary %>"></td>
+
+        <td><button type="submit">Update</button></td>
+      </tr>
+    </form>
+    <% }) %>
+  </table>
+<%- include('footer'); -%>

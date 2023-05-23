@@ -1,0 +1,21 @@
+<%- include('header'); -%>
+<h1>Employee List</h1>
+<table>
+  <% employees.forEach(employee => { %>
+  <tr>
+    
+    <td><%= employee.fname %></td>
+    <td><%= employee.lname %></td>
+    <td><%= employee.email %></td>
+    <td><%= employee.age %></td>
+    <td><%= employee.salary %></td>
+    <td><%= employee.department %></td>
+    <td>
+      <form action="/employees/<%= employee.id %>/delete" method="POST">
+        <button type="submit">Delete</button>
+      </form>
+    </td>
+  </tr>
+  <% }) %>
+</table>
+<%- include('footer'); -%>

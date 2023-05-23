@@ -1,0 +1,93 @@
+/* Style for the employee table */
+body {
+    height : 100vh;
+    width : 100vw;
+    background: url('../images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color : white !important;
+    font-size : 15px !important;
+    font-weight: 600 !important;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style for the forms */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+button {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: rgb(110, 110, 244);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #55eae3;
+    transition: .3s ease-in-out;
+    font-weight: 700 !important;
+    color : black;
+}
+
+/* Style for the delete confirmation message */
+p.confirmation {
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px;
+}
+
+
+
+footer {
+    width: 100vw;
+    height: 75px;
+    background-color: lightblue;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : black;
+}
+
+.addForm {
+    display : flex;
+    flex-direction: column;
+    margin : 20px;
+}
+.addForm input {
+    width : 300px;
+}
+
+.addForm button {
+    width : 300px;
+}
